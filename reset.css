@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  place-items: center;
+  background: rgb(0, 48, 155);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 48, 155, 1) 0%,
+    rgba(140, 32, 158, 1) 86%,
+    rgba(155, 29, 155, 1) 100%
+  );
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 730px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 410px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 330px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("fonts/RobotoSlab-VariableFont_wght.ttf");
+  font-weight: 300 400;
+}
